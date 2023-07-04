@@ -59,6 +59,7 @@ export default function Pizza() {
         setPizza(pizza => [...pizza, newPizza])
         console.log(newPizza)
         console.log(pizza)
+        setFormValues(initialFormValues)
     }
     const validate = (name, value) => {
         yup.reach(schema, name)
